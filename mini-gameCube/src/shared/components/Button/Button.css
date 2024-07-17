@@ -1,0 +1,83 @@
+.button {
+   padding: 10px 16px;
+   display: flex;
+
+   align-items: center;
+
+   width: 100%;
+   height: 44px;
+   border-radius: 5px;
+
+   color: rgb(255, 255, 255);
+   border-bottom: 1px solid rgb(145, 89, 190);
+   background: rgb(100, 63, 130);
+
+   cursor: pointer;
+
+   &:hover {
+      border-bottom: 1px solid rgb(171, 105, 226);
+      background: rgb(129, 81, 168);
+   }
+
+   &:active {
+      border-bottom: 1px solid rgb(215, 116, 0);
+      background: rgb(246, 162, 0);
+   }
+}
+
+.even-odd {
+   /* Frame 6 (buttons) */
+   position: static;
+   width: 165px;
+   height: 44px;
+   /* Auto layout */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   /* Inside Auto Layout */
+   flex: none;
+   order: 3;
+   flex-grow: 0;
+}
+
+.specific-number {
+   width: 100%;
+   justify-content: space-between;
+
+   span:nth-child(2) {
+      max-width: 27px;
+      height: 22px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      background: rgb(255, 255, 255);
+      opacity: 0.1;
+      color: black;
+      border-radius: 4px;
+   }
+}
+
+.specific-number:active span:nth-child(2) {
+   background: rgb(255, 255, 255);
+   opacity: 1;
+}
+
+.bet {
+   width: 100%;
+
+   border-bottom: 1px solid rgb(85, 243, 10);
+   background: rgb(55, 172, 0);
+
+   &:hover {
+      border-bottom: 1px solid rgb(125, 255, 63);
+      background: rgb(65, 202, 0);
+   }
+   &:disabled {
+      border-bottom: 1px solid rgb(85, 243, 10);
+      background: rgb(55, 172, 0);
+      opacity: 0.3;
+   }
+}

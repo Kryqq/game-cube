@@ -1,0 +1,26 @@
+{
+   "compilerOptions": {
+      "baseUrl": ".",
+      "module": "esNext",
+      "target": "esnext",
+      "moduleResolution": "node",
+      "lib": ["ES2020", "DOM", "DOM.Iterable", "esnext"],
+      "paths": {
+         "@/*": ["./src/*"],
+         "@components/*": ["./src/shared/components/*"],
+         "@hooks/*": ["./src/shared/hooks/*"],
+         "@typography/*": ["./src/shared/typography/*"],
+         "@widgets/*": ["./src/widgets/*"]
+      },
+      "jsx": "react-jsx",
+
+   },
+
+   "include": ["src"],
+
+   "references": [
+      {
+         "path": "./tsconfig.node.json"
+      }
+   ]
+}

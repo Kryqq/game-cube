@@ -1,0 +1,29 @@
+.logIn {
+   position: absolute;
+   max-width: 434px;
+   width: 100%;
+
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+
+   padding: 48px;
+
+   border: 1px solid rgb(75, 41, 100);
+   border-radius: 4px;
+
+   background: rgb(37, 14, 54);
+
+   display: flex;
+   flex-direction: column;
+
+   gap: 16px;
+}
+
+.xCross {
+   width: 14.595px;
+   height: 14px;
+   background-image: url('./../../../assets/xCross.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+}

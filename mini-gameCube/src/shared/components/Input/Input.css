@@ -1,0 +1,39 @@
+.input {
+   width: 100%;
+   position: static;
+
+   height: 40px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 8px 12px 8px 12px;
+
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0;
+   margin: 6px 0px;
+
+   border: 1px solid rgb(203, 213, 225);
+   border-radius: 6px;
+
+   background: rgb(255, 255, 255);
+}
+
+.input:focus {
+   border: 1px solid rgb(56, 147, 255);
+}
+
+.disabled {
+   color: rgba(0, 0, 0, 0.5);
+   background: rgb(203, 213, 225);
+}
+
+.error {
+   border: 1px solid rgb(255, 0, 0);
+}
+.error__text {
+   color: red;
+}

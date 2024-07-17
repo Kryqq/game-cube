@@ -1,0 +1,86 @@
+.bet__selector {
+   width: 100%;
+}
+
+.bet__selector_label {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   color: rgb(255, 255, 255);
+}
+
+.custom__select_container {
+   position: relative;
+   width: 100%;
+   cursor: pointer;
+}
+
+.custom-select {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 12px;
+   border-radius: 4px;
+   color: rgb(0, 0, 0);
+   border: 1px solid #ccc;
+   background-color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0%;
+   text-align: left;
+}
+
+.arrow {
+   padding: 3px;
+   transition: transform 0.2s;
+   margin: 3px;
+   border: 1.33px solid rgb(148, 163, 184);
+   border-width: 0 2px 2px 0;
+}
+
+.down {
+   transform: rotate(45deg);
+}
+
+.up {
+   transform: rotate(-135deg);
+}
+
+.options {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   border-radius: 4px;
+   z-index: 1;
+   overflow-y: auto;
+   margin: 0;
+   padding: 0;
+   opacity: 0;
+   transform: scaleY(0);
+   color: rgb(0, 0, 0);
+   transform-origin: top;
+   border: 1px solid #ccc;
+   background-color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0%;
+   text-align: left;
+}
+
+.options.show {
+   opacity: 1;
+   transform: scaleY(1);
+}
+
+.options li {
+   padding: 5px 12px;
+   list-style: none;
+   cursor: pointer;
+}
+
+.options li:hover {
+   background-color: #f1f1f1;
+}

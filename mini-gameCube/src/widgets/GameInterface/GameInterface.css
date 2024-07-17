@@ -1,0 +1,36 @@
+.game__interface {
+   margin: 0 auto;
+   width: 338px;
+   height: 492px;
+   left: 791px;
+   top: 266px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 0px;
+}
+
+.bet__variants {
+   padding-top: 16px;
+   padding-bottom: 4px;
+   width: 100%;
+   font-size: 14px;
+   color: rgb(255, 255, 255);
+}
+
+.button__grid_containter {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 8px;
+}
+.footer__buttons {
+   width: 100%;
+   padding-top: 8px;
+   gap: 16px;
+}
+.footer__buttons > :not(:first-child) {
+   margin-top: 16px;
+   padding-left: 40px;
+}
