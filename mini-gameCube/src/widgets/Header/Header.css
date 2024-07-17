@@ -2,7 +2,12 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   span {
+      color: white;
+      margin: 20px;
+   }
 }
 .header__buttons {
    display: flex;
+   margin: 10px 36px;
 }

@@ -2,19 +2,22 @@ import React from 'react';
 import clsx from 'clsx';
 import './BetSelector.css';
 import { useClickOutside } from '@hooks/useClickOutside';
+import useGameStore from '@/shared/store/gameStore/gameStore';
 
 export const BetSelector = () => {
    const [selectedValue, setSelectedValue] = React.useState('');
    const [isOpen, setIsOpen] = React.useState(false);
    const ref = React.useRef(null);
    const options = ['1.00', '2.00', '3.00', '5.00', '10.00', '25.00', '60.00', '100.00'];
-
+   const { setBetSize, setBetOption } = useGameStore();
    const handleToggle = () => {
       setIsOpen(!isOpen);
    };
 
    const handleChange = (value: string) => {
       setSelectedValue(value);
+      setBetSize(value);
+      setBetOption(value);
       setIsOpen(false);
    };
 

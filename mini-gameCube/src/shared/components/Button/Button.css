@@ -3,7 +3,7 @@
    display: flex;
 
    align-items: center;
-
+   justify-content: space-between;
    width: 100%;
    height: 44px;
    border-radius: 5px;
@@ -25,25 +25,24 @@
    }
 }
 
-.even-odd {
-   /* Frame 6 (buttons) */
+.even__odd {
    position: static;
    width: 165px;
    height: 44px;
-   /* Auto layout */
+
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 
-   /* Inside Auto Layout */
    flex: none;
    order: 3;
    flex-grow: 0;
 }
 
-.specific-number {
+.specific__number {
    width: 100%;
+
    justify-content: space-between;
 
    span:nth-child(2) {
@@ -60,7 +59,7 @@
    }
 }
 
-.specific-number:active span:nth-child(2) {
+.specific__number :active span:nth-child(2) {
    background: rgb(255, 255, 255);
    opacity: 1;
 }
@@ -80,4 +79,7 @@
       background: rgb(55, 172, 0);
       opacity: 0.3;
    }
+}
+.disabled__button {
+   opacity: 0.7;
 }

@@ -18,12 +18,8 @@
    flex-direction: column;
 
    gap: 16px;
+   z-index: 4;
 }
-
-.xCross {
-   width: 14.595px;
-   height: 14px;
-   background-image: url('./../../../assets/xCross.png');
-   background-size: contain;
-   background-repeat: no-repeat;
+.logIn__inputs {
+   width: 100%;
 }

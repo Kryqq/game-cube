@@ -10,10 +10,13 @@
          "@components/*": ["./src/shared/components/*"],
          "@hooks/*": ["./src/shared/hooks/*"],
          "@typography/*": ["./src/shared/typography/*"],
-         "@widgets/*": ["./src/widgets/*"]
+         "@widgets/*": ["./src/widgets/*"],
+         "@pages/*": ["./src/pages/*"],
+         "@api/*": ["./src/shared/api/*"],
+         "@store/*": ["./src/shared/store/*"]
       },
       "jsx": "react-jsx",
-
+      "allowSyntheticDefaultImports": true
    },
 
    "include": ["src"],

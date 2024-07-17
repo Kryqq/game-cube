@@ -4,9 +4,17 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 
-// https://vitejs.dev/config/
+ 
 export default defineConfig({
   plugins: [react()],
+  base: '/game-cube/',
+  preview: {
+	port: 3001,
+   },
+ 
+   server: {
+	port: 3000,
+   },
   resolve: {
 	alias: {
 		"@":path.resolve(__dirname, "./src"),
@@ -14,6 +22,9 @@ export default defineConfig({
 		"@hooks":path.resolve(__dirname, "./src/shared/hooks"),
 		"@widgets":path.resolve(__dirname, "./src/widgets"),
 		"@typography": path.resolve(__dirname, "./src/shared/Typography"),
+		"@api": path.resolve(__dirname, "./src/shared/api"),
+		"@pages": path.resolve(__dirname, "./src/pages"),
+		"@store": path.resolve(__dirname, "./src/shared/store"),
 	},
    },
 })

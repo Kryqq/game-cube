@@ -1,0 +1,11 @@
+.xCross {
+   position: absolute;
+   right: 15px;
+   top: 15px;
+   cursor: pointer;
+   fill: rgb(148, 163, 184);
+}
+
+.xCross:hover {
+   fill: rgb(203, 225, 255);
+}
