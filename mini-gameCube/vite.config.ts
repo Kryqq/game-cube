@@ -9,11 +9,11 @@ export default defineConfig({
   plugins: [react()],
   base: '/game-cube/',
   preview: {
-	port: 3001,
+	port: 3005,
    },
  
    server: {
-	port: 3000,
+	port: 3001,
    },
   resolve: {
 	alias: {

@@ -11,7 +11,7 @@ export const Points = () => {
       >
          <desc>Created with Pixso.</desc>
          <defs />
-         <circle id="Ellipse 203" cx="7.338867" cy="7.338715" r="7.338710" fill="#000000" fill-opacity="1.000000" />
+         <circle id="Ellipse 203" cx="7.338867" cy="7.338715" r="7.338710" fill="#000000" />
       </svg>
    );
 };
